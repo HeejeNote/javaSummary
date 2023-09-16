@@ -9,7 +9,7 @@
 
 ## OOP
 
-``Encapsulation`` ``Abstraction`` ``Inheritance`` ``Polymorphism`` 
+``Encapsulation`` ``Abstraction`` ``Inheritance`` ``Polymorphism`` <br>
 ``SRP`` ``OCP`` ``LSP`` ``DIP`` ``ISP``
 
 

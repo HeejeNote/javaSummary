@@ -66,7 +66,7 @@ public class TestHashSet {
         hashSet.add("Orange");
 
         //then
-        assertFalse(hashSet.add("Apple"));
+        assertFalse(hashSet.add("Apple"), "요소 중복 에러 발생");
 
         assertEquals(3,hashSet.size());
 

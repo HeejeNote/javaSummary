@@ -21,7 +21,7 @@ public class TestVector {
      * syncronized로 인해 get,put에 스레드마다 lock이 발생 -> 성능상 ArrayList에 비해 불리
      */
 
-    private Vector<String> vector;
+    private List<String> vector;
 
     @BeforeEach
     public void setUp() {

@@ -71,11 +71,17 @@ public class TestTreeSet {
     @Test
     @DisplayName("요소 Null 비허용 테스트")
     public void testNullable() {
+        //when
+        treeSet.add("Banana");
+        treeSet.add("Apple");
+        treeSet.add("Orange");
+
         //then
         assertThrows(NullPointerException.class, () ->{
-            //when
             treeSet.add(null); // null 요소를 추가 > 예외 발생
         });
+
+        assertEquals(3,treeSet.size());
     }
 
     @Test
