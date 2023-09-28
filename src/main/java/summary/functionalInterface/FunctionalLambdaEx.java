@@ -22,7 +22,7 @@ public class FunctionalLambdaEx {
 
         /**
          * 위 코드를 람다식으로 변환
-         * 메서드 내부 구현이 한줄이 아니면 람다식으로 변환 X
+         * 메서드 내부 구현이 한줄이면 중괄호 없이 애로우 만으로 표현 가능
          */
         FunctionalEx singleLambda = () -> System.out.println("single lambda ::: heeje");
 
