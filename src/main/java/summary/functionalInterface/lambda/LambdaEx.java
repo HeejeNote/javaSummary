@@ -1,8 +1,7 @@
-package summary.functionalInterface;
+package summary.functionalInterface.lambda;
 
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;
-import java.util.function.Supplier;
 
 public class LambdaEx {
     public static void main(String[] args) {
