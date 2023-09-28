@@ -1,5 +1,9 @@
 package summary.functionalInterface;
 
+import java.util.function.BiFunction;
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 public class FunctionalLambdaEx {
     /**
      * 함수형 인터페이스 ::: 추상 메서드를 하나만 가지는 인터페이스. 다른 종류의 메서드의 종류의 갯수는 영향을 주지 않는다.
@@ -52,6 +56,8 @@ public class FunctionalLambdaEx {
         multiple.doIt();
         multipleLambda.doIt();
 
+        System.out.println("-------------------------------------------------------");
+
         /**
          * 순수 함수 ::: 결과가 외부 요인을 받지 않는 함수
          */
@@ -63,9 +69,9 @@ public class FunctionalLambdaEx {
         };
 
         // 같은 입력 값을 넣으면 같은 결과를 출력하는 것을 보장한다.
-        System.out.println("pureFunctionEx.doIt(1) = " + pureFunctionEx.doIt(1)); // 11
-        System.out.println("pureFunctionEx.doIt(1) = " + pureFunctionEx.doIt(1)); // 11
-        System.out.println("pureFunctionEx.doIt(1) = " + pureFunctionEx.doIt(1)); // 11
+        System.out.println("pureFunctionEx.doIt(1) ::: " + pureFunctionEx.doIt(1)); // 11
+        System.out.println("pureFunctionEx.doIt(1) ::: " + pureFunctionEx.doIt(1)); // 11
+        System.out.println("pureFunctionEx.doIt(1) ::: " + pureFunctionEx.doIt(1)); // 11
 
 
         /**
@@ -83,7 +89,7 @@ public class FunctionalLambdaEx {
         };
 
 //        baseNum++; // 함수 내에서 참조한 변수를 외부에서 값을 변경할 수 없다.
-        System.out.println("disPure.doIt(5) = " + disPure.doIt(5)); // 15
+        System.out.println("disPure.doIt(5) ::: " + disPure.doIt(5)); // 15
 
         /**
          * 비순수 함수 :::결과가 외부에 요인을 받는 함수
@@ -99,8 +105,21 @@ public class FunctionalLambdaEx {
             }
         };
 
-        System.out.println("disPure2.doIt(5) = " + disPure2.doIt(5)); // 15
-        System.out.println("disPure2.doIt(5) = " + disPure2.doIt(5)); // 16
-        System.out.println("disPure2.doIt(5) = " + disPure2.doIt(5)); // 17
+        System.out.println("disPure2.doIt(5) ::: " + disPure2.doIt(5)); // 15
+        System.out.println("disPure2.doIt(5) ::: " + disPure2.doIt(5)); // 16
+        System.out.println("disPure2.doIt(5) ::: " + disPure2.doIt(5)); // 17
+
+        System.out.println("-------------------------------------------------------");
+
+        /**
+         * Function 인터페이스를 구현한 PluseNumber 클래스 사용
+         */
+        PlusNumber plusNumber = new PlusNumber();
+        System.out.println("plusNumber.apply(1) ::: " + plusNumber.apply(1));
+
+        System.out.println("-------------------------------------------------------");
+
+
+
     }
 }
