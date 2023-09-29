@@ -1,7 +1,7 @@
-package summary.functionalInterface;
+package summary.java8.functional;
 
 @FunctionalInterface
-public interface FunctionalEx {
+public interface IFunctionalEx {
 
     /**
      * 추상메서드가 하나만 존재하면 함수형 인터페이스이다. (abstract 생략가능)

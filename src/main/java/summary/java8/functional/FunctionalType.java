@@ -1,6 +1,5 @@
-package summary.functionalInterface;
+package summary.java8.functional;
 
-import java.util.Locale;
 import java.util.function.*;
 
 public class FunctionalType {

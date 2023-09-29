@@ -1,4 +1,4 @@
-package summary.functionalInterface.methodReference;
+package summary.java8.methodReference;
 
 public class Greeting {
 

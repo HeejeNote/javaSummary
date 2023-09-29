@@ -1,4 +1,4 @@
-package summary.functionalInterface;
+package summary.java8.functional;
 
 import java.util.function.Function;
 

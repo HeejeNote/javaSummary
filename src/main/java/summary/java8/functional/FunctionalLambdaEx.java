@@ -1,8 +1,4 @@
-package summary.functionalInterface;
-
-import java.util.function.BiFunction;
-import java.util.function.Consumer;
-import java.util.function.Function;
+package summary.java8.functional;
 
 public class FunctionalLambdaEx {
     /**
@@ -17,7 +13,7 @@ public class FunctionalLambdaEx {
         /**
          * 익명 내부 클래스 anonymous inner class
          */
-        FunctionalEx single = new FunctionalEx() {
+        IFunctionalEx single = new IFunctionalEx() {
             @Override
             public void doIt() {
                 System.out.println("single anonymous inner class ::: heeje");
@@ -28,14 +24,14 @@ public class FunctionalLambdaEx {
          * 위 코드를 람다식으로 변환
          * 메서드 내부 구현이 한줄이면 중괄호 없이 애로우 만으로 표현 가능
          */
-        FunctionalEx singleLambda = () -> System.out.println("single lambda ::: heeje");
+        IFunctionalEx singleLambda = () -> System.out.println("single lambda ::: heeje");
 
 
 
         /**
          * 익명 내부 클래스 anonymous inner class
          */
-        FunctionalEx multiple = new FunctionalEx() {
+        IFunctionalEx multiple = new IFunctionalEx() {
             @Override
             public void doIt() {
                 System.out.println("multiple anonymous inner class ::: heeje");
@@ -46,7 +42,7 @@ public class FunctionalLambdaEx {
         /**
          * 메서드 내부 구현이 여러 줄이면 중괄호 안으로 구현 코드를 묶어서 람다식으로 변환
          */
-        FunctionalEx multipleLambda = () -> {
+        IFunctionalEx multipleLambda = () -> {
             System.out.println("multiple lambda ::: heeje");
             System.out.println("multiple lambda ::: lambda");
         };
@@ -61,7 +57,7 @@ public class FunctionalLambdaEx {
         /**
          * 순수 함수 ::: 결과가 외부 요인을 받지 않는 함수
          */
-        PureFunctionEx pureFunctionEx = new PureFunctionEx() {
+        IPureFunctionEx pureFunctionEx = new IPureFunctionEx() {
             @Override
             public int doIt(int number) {
                 return number + 10;
@@ -79,7 +75,7 @@ public class FunctionalLambdaEx {
          * 아래 예시에서 변수값이 메서드 외부에서 선언되는 부분이 외부 요인을 받는다.
          */
         int baseNum = 10;
-        PureFunctionEx disPure = new PureFunctionEx() {
+        IPureFunctionEx disPure = new IPureFunctionEx() {
 
             @Override
             public int doIt(int number) {
@@ -96,7 +92,7 @@ public class FunctionalLambdaEx {
          * 아래 예시에서 변수값이 메서드 외부에서 선언되는 부분이 외부 요인을 받는다.
          *
          */
-        PureFunctionEx disPure2 = new PureFunctionEx() {
+        IPureFunctionEx disPure2 = new IPureFunctionEx() {
             int baseNum2 = 10; // 외부에 상태값이 존재하게 되면 람다식으로 변환할 수 없다.
             @Override
             public int doIt(int number) {
