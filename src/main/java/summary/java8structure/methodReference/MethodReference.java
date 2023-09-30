@@ -1,4 +1,4 @@
-package summary.java8.methodReference;
+package summary.java8structure.methodReference;
 
 import java.util.Arrays;
 import java.util.function.Function;

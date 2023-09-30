@@ -1,4 +1,4 @@
-package summary.java8.functional;
+package summary.java8structure.functional;
 
 public class FunctionalLambdaEx {
     /**

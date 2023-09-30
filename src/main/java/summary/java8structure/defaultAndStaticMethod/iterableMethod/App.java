@@ -1,6 +1,5 @@
-package summary.java8.defaultAndStaticMethod.iterableMethod;
+package summary.java8structure.defaultAndStaticMethod.iterableMethod;
 
-import javax.lang.model.SourceVersion;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Spliterator;

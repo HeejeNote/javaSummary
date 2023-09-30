@@ -1,4 +1,4 @@
-package summary.java8.lambda;
+package summary.java8structure.lambda;
 
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;

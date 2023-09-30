@@ -1,4 +1,4 @@
-package summary.java8.defaultAndStaticMethod.CollectionMethod;
+package summary.java8structure.defaultAndStaticMethod.CollectionMethod;
 
 import java.util.ArrayList;
 import java.util.List;

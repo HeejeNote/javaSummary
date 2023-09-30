@@ -1,4 +1,4 @@
-package summary.java8.defaultAndStaticMethod.ComparatorMethod;
+package summary.java8structure.defaultAndStaticMethod.ComparatorMethod;
 
 import java.util.ArrayList;
 import java.util.Comparator;

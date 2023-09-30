@@ -1,4 +1,4 @@
-package summary.java8.defaultAndStaticMethod;
+package summary.java8structure.defaultAndStaticMethod;
 
 public interface IExtendsIDM extends IDefaultMethod{
 
