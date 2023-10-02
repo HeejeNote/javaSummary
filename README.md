@@ -5,7 +5,7 @@
 
 ## - Java 8 Structure
 
-``lambda`` ``stream`` ``Optional`` ``Functional`` ``default`` 
+``Functional`` ``Lambda`` ``Stream`` ``Optional``  ``default`` ``static`` ``Concurrent``
 
 ## OOP
 
