@@ -14,8 +14,8 @@ public class App {
         /**
          * 클래스 로더 시스템에서 로딩이 끝나면 해당 클래스 타입의 Class 객체를 생성하여 "힙" 영역에 저장
          */
-        Class<App> workAppClass = App.class; // Class<WorkApp> 타입 객체 생성시 힙 영역에 저장
-        System.out.println("workAppClass = " + workAppClass); // class summary.WorkApp
+        Class<App> app = App.class; // Class<App> 타입 객체 생성시 힙 영역에 저장
+        System.out.println("app ::: " + app); // class summary.WorkApp
 
         ClassLoader classLoader = App.class.getClassLoader();
 
