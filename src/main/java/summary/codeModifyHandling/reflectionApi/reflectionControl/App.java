@@ -63,6 +63,7 @@ public class App {
 
         /**
          * 인스턴스 메서드 호출 :::
+         * -> 메소드 실행하기 ::: Object Method.invoke(object, params)
          */
         Method privateVoidMethod = Music.class.getDeclaredMethod("privateVoidMethod");
         privateVoidMethod.setAccessible(true); // 메서드 접근제어자 무시하고 접근
