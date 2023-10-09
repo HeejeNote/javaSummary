@@ -1,4 +1,4 @@
-package summary.codeModifyHandling.reflectionApi;
+package summary.codeModifyHandling.reflectionApi.reflectionApp;
 
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -38,7 +38,7 @@ public class App {
         // 3. 클래스를 문자열로 호출
         // Class.forName(“FQCN”) // 풀 패키지 클레스 네임
         // forName으로 찾을 수 없으면 ClassNotFoundException 예외가 발생한다.
-        Class<?> bookClass3 = Class.forName("summary.codeModifyHandling.reflectionApi.Book");
+        Class<?> bookClass3 = Class.forName("summary.codeModifyHandling.reflectionApi.reflectionApp.Book");
         System.out.println("bookClass3 = " + bookClass3); // class summary.codeModifyHandling.reflectionExplain.Book
         System.out.println("----------------------------------");
 
